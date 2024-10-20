@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Platform</title>
+    <!-- link DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Nav Section Start -->
+    <div class="navbar bg-base-100 w-10/12 mx-auto mb-10">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Home</a></li>
+              <li><a>Shop</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <!-- logo -->
+          <div class="flex justify-center items-center gap-2">
+            <img class="h-4" src="assets/logo.webp" alt="">
+            <a class="text-2xl font-bold">Peddy</a>
+          </div>
+        </div>
+        <!-- nav 3 menu -->
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="text-xl"><a>Home</a></li>
+            <li class="text-xl"><a>Shop</a></li>
+            <li class="text-xl"><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button><img class="border rounded-full p-2 w-10 h-10" src="https://img.icons8.com/?size=100&id=82751&format=png&color=000000" alt=""></button>
+        </div>
+    </div>
+    <!-- Nav Section End -->
+
+
+    <!-- Banner Section Start -->
+     <section class="w-10/12 mx-auto text-center space-y-9 mb-10">
+        <p class="text-2xl font-bold text-gray-500">Bringing Families Together   🔥</p> 
+        <p class=" text-4xl lg:text-5xl font-bold">Your Path to Adoption <br> Starts Here</p> 
+        <p >It is a long established fact that a reader will be distracted by the readable content of a page when looking <br> at its layout. The point of using Lorem Ipsum is that it has a.</p>
+
+        <ul>
+          <li class="btn  bg-[#0E7A81] text-white text-sm hover:bg-[#169da7] "><a href="#banners">View More</a></li>
+        </ul>
+        <div class="flex justify-center">
+            <img src="images/pet.webp" alt="">
+        </div>
+        
+     </section>
+    <!-- Banner Section End -->
+
+
+    <!-- Adopt Your Best Friend Section Start-->
+     <section id="banners" class="w-10/12 mx-auto">
+        <!-- text -->
+     <div class="space-y-6 text-center mb-7">
+        <p class="text-4xl font-bold">Adopt  Your  Best Friend</p>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a <br> page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+     </div>
+
+     <!-- 4 button Start --> 
+     <div id="category-btn" class="mb-10 grid grid-cols-2 lg:grid-cols-4 gap-7 ">
+        
+     </div>
+     <!-- 4 button End -->
+     <!-- Adopt Your Best Friend Section End-->
+     </section>
+    <!-- Adopt Your Best Friend Section End-->
+
+
+    <!-- sort by price button -->
+     <section class="w-10/12 mx-auto">
+        <!-- text & button(sort by price) -->
+         <div  class="flex justify-between items-center mb-7">
+            <div class="text-xl font-bold">Best Deal For You</div>
+            <div><button onclick="sortByPrice()" class="px-6 text-white font-bold bg-[#0E7A81] btn hover:bg-[#2299a1] rounded-xl">Sort by Price</button></div>
+            
+         </div>
+     </section>
+    <!-- sort by price button end -->
+
+
+    <!-- loading spinner section start-->
+    <div class="flex justify-center" id="loader">
+     <span id="spinner" class="loading loading-bars loading-lg hidden"></span>
+    </div>
+    <!-- loading spinner section start-->
+
+
+    <!-- Card Section start -->
+    <section class="w-10/12 grid grid-cols-8 mx-auto mb-10 ">
+  
+      <!-- Card Start -->     
+    <div class="lg:col-span-6 col-span-8">
+      <div id="card" class=" grid col-span-8 lg:grid-cols-3 md:grid-cols-2 gap-5"></div>
+    </div>
+      <!-- <div id="card" class="col-span-4 lg:grid-cols-3 md:grid-cols-2 gap-5"></div> -->
+    <!-- Card End -->
+    <!-- card side -->
+    <div class=" ml-3 lg:col-span-2 md:col-span-8 col-span-8 lg:grid-cols-2 md:grid-cols-2 border rounded-xl gap-5 p-5 mt-5 lg:mt-0">
+      <div id="like-btn" class="grid grid-cols-2  lg:col-span-2 gap-4 ">
+        
+    </div>
+    <!-- card side -->
+
+    </section>
+    <!-- card section end -->
+
+
+    <!-- Footer section Start -->
+     <Footer class="bg-gray-800">
+      <section class="w-10/12 mx-auto">
+        <div class="footer text-white text-base-content p-10 lg:flex justify-between py-24">
+          <nav class="space-y-1">
+            <div class=" flex gap-2">
+              <img class="h-8 w-7" src="assets/logo.webp" alt="">
+              <p class="text-2xl font-bold mb-5">Peddy</p>
+            </div>
+            <a class="link link-hover">Location: av. Washington 165, NY CA 54003</a>
+            <a class="link link-hover">Phone: +31 85 964 47 25</a>
+            <a class="link link-hover">Email: info@yourdomain.com</a>
+            <a class="link link-hover">Openings hours: 9.00 AM - 5.00 PM</a>
+            <div class="flex items-center gap-4">
+              <img class="h-12 w-12" src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="">
+              <img class="h-12 w-12" src="https://img.icons8.com/?size=100&id=ZNMifeqJbPRv&format=png&color=000000" alt="">
+              <img class="h-12 w-12" src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000" alt="">
+              <img class="h-12 w-12" src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="">
+            </div>
+          </nav>
+          <nav>
+            <a class=" text-xl font-bold mb-5">Useful Links</a>
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Animals</a>
+            <a class="link link-hover">Foundation</a>
+            <a class="link link-hover">Contact</a>
+          </nav>
+          <nav class="space-y-3">
+            <p class="text-xl font-bold mb-2">Drop a Message</p>
+            <input type="text" placeholder="Enter your email" class="input input-bordered w-full max-w-xs bg-gray-700" />
+            <button class="btn bg-[#0E7A81] hover:bg-[#30afb8] text-white font-bold btn-wide">Subscribe</button>
+          </nav>
+        </div>
+      </section>
+     </Footer>
+    <!-- Footer section End -->
+
+
+    <!-- Modal start -->
+      <button class="btn hidden" onclick="my_modal_5.showModal()">open modal</button>
+      <dialog id="customModal" class="modal modal-bottom sm:modal-middle">
+          <div class="modal-box ">
+   
+           <div id="modal-container">
+   
+           </div> 
+   
+            <div class="modal-action flex justify-center">
+   
+              <form method="dialog" class="w-full">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn text-xl font-bold w-full bg-[#b2f1f7] hover:bg-[#398188] text-[#16656b] hover:text-[#c0f0f3]">Cancel</button>
+              </form>
+   
+            </div>
+          </div>
+      </dialog>
+    <!-- Modal End -->
+
+
+    <!-- Congratulation modal start -->
+    <input type="checkbox" id="adoptModal" class="modal-toggle" />
+    <div class="modal">
+        <div id="adoptCard" class="modal-box border border-gray-300 rounded-lg p-5">
+            <div class="flex justify-center">
+              <img src="https://img.icons8.com/?size=100&id=33824&format=png&color=000000" alt="Pet Adoption Icon">
+            </div>
+            <p class="text-center text-3xl font-bold">Congrats</p>
+            <p class="text-center">Adoption process has started for your pet</p>
+            
+            <span id="countdown" class="countdown font-mono text-6xl flex justify-center"></span> <!-- This will display the countdown value -->
+        </div>
+    </div>
+    <!-- Congratulation modal End -->
+
+
+    <!-- Add JS File -->
+     <script src="index.js"></script>
+</body>
+</html>
